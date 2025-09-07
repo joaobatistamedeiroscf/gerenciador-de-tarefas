@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { MdDeleteForever } from "react-icons/md";
-import "./styles/style.css"
+import { MdDeleteForever } from "react-icons/md"; 
+import "./index.css"
 
-function Task() {
+function TaskManager() {
   const [tarefa, setTarefa] = useState("");
   const [itens, setItens] = useState([]);
 
@@ -77,4 +77,4 @@ function Task() {
   );
 }
 
-export default Task;
+export default TaskManager;
