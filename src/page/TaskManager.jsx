@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import {useState} from "react";
 import { MdDeleteForever } from "react-icons/md"; 
 import "./index.css"
+import "/src/assets/font/poppins.css"
 
 function TaskManager() {
   const [tarefa, setTarefa] = useState("");
   const [itens, setItens] = useState([]);
+
+  
 
   function Enviar(evento) {
     evento.preventDefault();
@@ -25,7 +28,7 @@ function TaskManager() {
   }
 
   return (
-    <div className="max-w-xl mx-auto mt-10 bg-white p-8 rounded-2xl shadow-md text-center font-poppins">
+    <div className="max-w-xl mx-auto mt-10 bg-white p-8 rounded-2xl shadow-md text-center font">
       <h1 className="text-2xl font-semibold text-indigo-600 mb-5">
         Lista de Tarefas
       </h1>
